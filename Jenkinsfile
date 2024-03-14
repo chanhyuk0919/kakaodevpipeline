@@ -10,8 +10,8 @@ pipeline {
     stage('도커 이미지 빌드 및 푸시') {
       steps {
         sh '''
-        docker build -t dlcksgur0919/kakaodev:yellow .
-        docker push dlcksgur0919/kakaodev:yellow
+        sudo docker build -t dlcksgur0919/kakaodev:yellow .
+        sudo docker push dlcksgur0919/kakaodev:yellow
         '''
       }
     }
